@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetia Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hetia-menu" class="hidden">
+        <div class="menu-header">
+            <h1 class="menu-logo">HETIA</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="main">Main</button>
+                <button class="tab-btn" data-tab="online">Online</button>
+                <button class="tab-btn" data-tab="server">Server</button>
+                <button class="tab-btn" data-tab="misc">Misc</button>
+            </div>
+        </div>
+
+        <div class="menu-body">
+            <div id="tab-main" class="tab-content active">
+                <div class="menu-item toggle-item" data-action="godmode">
+                    <span class="item-label">God Mode</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="godmode-checkbox">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="menu-item" data-action="heal">
+                    <span class="item-label">Heal Player</span>
+                </div>
+                <div class="menu-item" data-action="armor">
+                    <span class="item-label">Give Armor</span>
+                </div>
+            </div>
+
+            <div id="tab-online" class="tab-content">
+                <div class="menu-item" data-action="spawnWeapon" data-value="WEAPON_PISTOL">
+                    <span class="item-label">Spawn Pistol</span>
+                </div>
+                <div class="menu-item" data-action="spawnWeapon" data-value="WEAPON_CARBINERIFLE">
+                    <span class="item-label">Spawn Rifle</span>
+                </div>
+                <div class="menu-item" data-action="spawnWeapon" data-value="WEAPON_RPG">
+                    <span class="item-label">Spawn RPG</span>
+                </div>
+            </div>
+
+            <div id="tab-server" class="tab-content">
+                <div class="menu-item" data-action="spawnVehicle" data-value="adder">
+                    <span class="item-label">Spawn Adder</span>
+                </div>
+                <div class="menu-item" data-action="spawnVehicle" data-value="t20">
+                    <span class="item-label">Spawn T20</span>
+                </div>
+                <div class="menu-item" data-action="spawnVehicle" data-value="zentorno">
+                    <span class="item-label">Spawn Zentorno</span>
+                </div>
+                <div class="menu-item" data-action="spawnVehicle" data-value="oppressor2">
+                    <span class="item-label">Spawn Oppressor Mk II</span>
+                </div>
+            </div>
+
+            <div id="tab-misc" class="tab-content">
+                <div class="menu-item" data-action="close">
+                    <span class="item-label">Close Menu</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-footer">
+            <span class="footer-text">Hetia | l-0-0 [lifetime]</span>
+            <span class="footer-keys">F5 to toggle</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
